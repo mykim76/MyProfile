@@ -13,8 +13,10 @@
         android:id="@+id/nickNameEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="닉네임""/>
+        android:singleLine="true"
+        android:hint="닉네임"/>
     <Button
+        android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="전송"/>

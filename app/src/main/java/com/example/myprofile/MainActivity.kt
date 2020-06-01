@@ -18,7 +18,13 @@ class MainActivity : AppCompatActivity() {
 
             getNickBtn.setOnClickListener {
 
+                var name = nickTxt.text.toString()
+                if(name=="닉네임표시")
+                {
+                    name = ""
+                }
                 val myIntent = Intent(this, NickNameActivity::class.java)
+                myIntent.putExtra("nowNick",name)
                 startActivityForResult(myIntent,REQ_MESSAGE_CODE)
             }
 

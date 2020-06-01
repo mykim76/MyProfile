@@ -73,6 +73,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="문자로 보낼 내용"
+            android:singleLine="true"
             android:layout_weight="3"/>
         <Button
             android:id="@+id/smstoBtn"
